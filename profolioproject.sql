@@ -1,3 +1,14 @@
+---Covid 19 Data Exploration project using sql
+-- 1.Total Cases vs Total Deaths
+-- 2.Total Cases vs Population
+-- 3.Countries with Highest Infection Rate compared to Population
+-- 4.Countries with Highest Death Count per Population
+-- 5.Show contintents with the highest death count per population
+-- 6.GLOBAL NUMBERS
+-- 7.Total Population vs Vaccinations
+-- 8.Using CTE to perform Calculation on Partition By in previous query
+-- 9.Using Temp Table to perform Calculation on Partition By in previous query
+-- 10.Creating View to store data for later visualizations
 SELECT *
 FROM CovidDeaths
 WHERE continent is not null
@@ -106,3 +117,4 @@ Join CovidVaccinations vac
 
 Select *, (RollingPeopleVaccinated/Population)*100
 From #PercentPopulationVaccinated
+
